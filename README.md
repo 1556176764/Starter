@@ -11,7 +11,7 @@
 
 #### SumApplication
 
-在这里完成任务分发，使用线程池来执行。这里是作者自定义的全局Application，用来完成初始化操作
+在这里完成任务分发，使用线程池来执行。自定义的全局Application，用来完成初始化操作
 
 #### dispatcher
 
