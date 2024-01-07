@@ -4,9 +4,7 @@
 
 设置了一些任务
 
-设置方法就是重写Task中的任务（需要异步执行的任务设置needWait为true并交给对应的线程池执行，需要在主线程执行的任务，则设置runOnMainThread()为true，参考InitAlert任务）
-
-这里把几个任务的needWait参数都设置为true的原因：因为他们都不在主线程执行，因此需要考虑同步问题，CountDownLatch(mNeedWaitCount.get())即等待这些任务完成才可以
+设置方法就是重写Task中的任务（需要异步执行的任务设置needWait为true并交给对应的线程池执行，需要在主线程执行的任务，则设置runOnMainThread()为true）
 
 
 #### SumApplication
