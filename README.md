@@ -80,7 +80,7 @@
 - 设置isWaiting为true
 - mTask.waitToSatisfy()，让它依赖的任务先执行
 - 记录等待时间并调用task.run（）
-- 获取mTask.tailRunnable即task的尾部任务，并执行它（实际上都没有使用，我猜测是不需要）
+- 获取mTask.tailRunnable即task的尾部任务，并执行它
 - 如果该任务不需要回调或者不在主线程运行
   - 调用TaskDispatcher，通知需要等待它完成的子任务 它完成，并标记该任务已完成
 
