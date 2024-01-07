@@ -8,12 +8,6 @@
 
 这里把几个任务的needWait参数都设置为true的原因：因为他们都不在主线程执行，因此需要考虑同步问题，CountDownLatch(mNeedWaitCount.get())即等待这些任务完成才可以
 
-- 初始化SumHelper
-- 初始化MMKV
-  - 要等InitSumHelperTask::class.java运行结束
-- 初始化AppManager
-- SmartRefreshLayout
-- InitArouterTask()
 
 #### SumApplication
 
